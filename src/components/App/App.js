@@ -1,7 +1,8 @@
 import React from "react";
-import SearchBar from "./SearchBar";
-import SearchResults from "./SearchResults";
-import Playlist from "./Playlist";
+import SearchBar from '../SearchBar/SearchBar';
+import SearchResults from '../SearchResults/SearchResults';  
+import Playlist from '../Playlist/Playlist';  
+
 
 
 function App() {

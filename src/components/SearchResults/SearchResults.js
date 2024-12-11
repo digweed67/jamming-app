@@ -1,6 +1,6 @@
 import React from "react";
-import Tracklist from "./Tracklist";
-import Track from "./Track";
+import Tracklist from "../Tracklist/Tracklist";
+import Track from "../Track/Track";
 
 
 
@@ -37,7 +37,7 @@ function SearchResults() {
 
     return (
         <div className="result-list">
-            <Tracklist song={tracks}/>
+            <Tracklist tracks={tracks}/>
         </div>
     );
 }
