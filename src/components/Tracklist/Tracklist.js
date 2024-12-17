@@ -1,8 +1,9 @@
 import React from "react";
-import Track from "../Track/Track";
+import Track from '../Track/Track';
 
 
-function Tracklist({ tracks }) {
+
+function Tracklist({ tracks = [] }) {
     return (
         <div>
             {tracks.map(track => (
@@ -15,6 +16,6 @@ function Tracklist({ tracks }) {
             ))}
         </div>
     );
-}
+};
 
 export default Tracklist; 

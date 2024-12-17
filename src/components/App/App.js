@@ -1,7 +1,8 @@
 import React from "react";
 import SearchBar from '../SearchBar/SearchBar';
-import SearchResults from '../SearchResults/SearchResults';  
-import Playlist from '../Playlist/Playlist';  
+import SearchResults from '../SearchResults/SearchResults';
+ 
+ 
 
 
 
@@ -11,7 +12,7 @@ function App() {
             <SearchBar />
             <div className="container">
                 <SearchResults /> 
-                <Playlist />
+                
             </div>
         </div>
 
