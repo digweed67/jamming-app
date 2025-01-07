@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Playlist from '../Playlist/Playlist';
+
  
  
 
@@ -35,9 +36,15 @@ function App() {
         ]
     );
 
-    function addTrack({ track }) {
-       
-
+    function addTrack(track) {
+        const isTrackInPlaylist = playlistTracks.some(savedTrack => savedTrack.id === track.id);
+        if (!isTrackInPlaylist) {
+            this.setState(prevState => ({
+                playlistTracks: [...prevState.playlistTracks, track]
+            }));
+            
+        }
+    
     }
 
     return (
