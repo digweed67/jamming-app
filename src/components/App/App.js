@@ -12,19 +12,19 @@ function App() {
     const [playlistTracks, setPlaylistTracks] = useState(
         [
             {
-                id: "1",
+                id: "5",
                 name: "Ande Ande ",
                 artist: "La Marimorena",
                 album: "La Marimorena - Original"
             },
             {
-                id: "2",
+                id: "6",
                 name: "Pero mira cómo beben",
                 artist: "Los Peces en el río",
                 album: "Éxitos de Navidad"
             },
             {
-                id: "3",
+                id: "7",
                 name: "Belén Campanas de Belén",
                 artist: "Los Ángeles",
                 album: "Feliz Navidad (single)"
@@ -35,7 +35,10 @@ function App() {
         ]
     );
 
+    function addTrack({ track }) {
+       
 
+    }
 
     return (
         <div> 
