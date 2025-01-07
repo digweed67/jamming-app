@@ -3,11 +3,11 @@ import Tracklist from "../Tracklist/Tracklist";
 
 
 
-function Playlist({ playlistName, playlistTracks }) {
+function Playlist({ playlistName, playlistTracks, removeTrack }) {
     return (
         <div>
             <h2>{playlistName}</h2>
-            <Tracklist tracks={playlistTracks} />
+            <Tracklist tracks={playlistTracks} removeTrack={removeTrack}/>
         </div>   
     );
 };

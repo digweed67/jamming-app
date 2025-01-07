@@ -59,6 +59,7 @@ function App() {
                 <Playlist
                 playlistName={playlistName}
                 playlistTracks={playlistTracks}
+                removeTrack={removeTrack}
                 /> 
             </div>
         </div>

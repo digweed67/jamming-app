@@ -3,7 +3,7 @@ import Track from '../Track/Track';
 
 
 
-function Tracklist({ tracks = [] }) {
+function Tracklist({ tracks, removeTrack }) {
 
     
     return (
@@ -14,6 +14,8 @@ function Tracklist({ tracks = [] }) {
                     name={track.name}
                     artist={track.artist}
                     album={track.album}
+                    removeTrack={removeTrack}
+
                 />
             ))}
         </div>
