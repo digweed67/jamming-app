@@ -39,12 +39,16 @@ function App() {
     function addTrack(track) {
         const isTrackInPlaylist = playlistTracks.some(savedTrack => savedTrack.id === track.id);
         if (!isTrackInPlaylist) {
-            this.setState(prevState => ({
-                playlistTracks: [...prevState.playlistTracks, track]
-            }));
+            setPlaylistTracks(prevTracks => [...prevTracks.playlistTracks, track]);
             
         }
     
+    }
+
+    function removeTrack(track) {
+        const updatedTracks = playlistTracks.filter(savedTrack => savedTrack.id !== track.id); 
+
+        setPlaylistTracks(updatedTracks);
     }
 
     return (
