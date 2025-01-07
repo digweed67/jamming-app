@@ -7,6 +7,7 @@ function Track({ name, artist, album }) {
             <h3>{name}</h3>
             <p>{artist}</p>
             <p>{album}</p>
+            <button>x</button>
         </div>
     );
 }
