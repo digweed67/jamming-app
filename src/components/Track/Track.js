@@ -1,10 +1,14 @@
 import React from "react"; 
 
 
-function Track({ track, removeTrack }) {
-    console.log(removeTrack);
+function Track({ track, removeTrack, addTrack }) {
+    
     function handleClick() {
         removeTrack(track);
+    }
+
+    function handleAdd() {
+        addTrack(track);
     }
     return (
         <div>
@@ -12,6 +16,7 @@ function Track({ track, removeTrack }) {
             <p>{track.artist}</p>
             <p>{track.album}</p>
             <button onClick={handleClick}>x</button>
+            <button onClick={handleAdd}>+</button>
         </div>
     );
 }

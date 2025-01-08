@@ -3,7 +3,7 @@ import Track from '../Track/Track';
 
 
 
-function Tracklist({ tracks, removeTrack }) {
+function Tracklist({ tracks, removeTrack, addTrack }) {
 
     
     return (
@@ -13,6 +13,7 @@ function Tracklist({ tracks, removeTrack }) {
                     key={track.id}
                     track={track}
                     removeTrack={removeTrack}
+                    addTrack={addTrack}
 
                 />
             ))}

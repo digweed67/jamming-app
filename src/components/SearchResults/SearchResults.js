@@ -5,7 +5,7 @@ import Tracklist from '../Tracklist/Tracklist';
 
 
 
-function SearchResults() {
+function SearchResults({ addTrack }) {
     const tracks = [
         {
             id: "1",
@@ -37,7 +37,10 @@ function SearchResults() {
 
     return (
         <div className="result-list">
-            <Tracklist tracks={tracks}/>
+            <Tracklist 
+                tracks={tracks}
+                addTrack={addTrack}
+            />
         </div>
     );
 }
