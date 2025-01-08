@@ -39,7 +39,7 @@ function App() {
     function addTrack(track) {
         const isTrackInPlaylist = playlistTracks.some(savedTrack => savedTrack.id === track.id);
         if (!isTrackInPlaylist) {
-            setPlaylistTracks(prevTracks => [...prevTracks.playlistTracks, track]);
+            setPlaylistTracks(prevTracks => [...prevTracks, track]);
             
         }
     
@@ -57,9 +57,9 @@ function App() {
             <div className="container">
                 <SearchResults />
                 <Playlist
-                playlistName={playlistName}
-                playlistTracks={playlistTracks}
-                removeTrack={removeTrack}
+                    playlistName={playlistName}
+                    playlistTracks={playlistTracks}
+                    removeTrack={removeTrack}
                 /> 
             </div>
         </div>
