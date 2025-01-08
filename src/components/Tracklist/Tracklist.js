@@ -11,9 +11,7 @@ function Tracklist({ tracks, removeTrack }) {
             {tracks.map(track => (
                 <Track 
                     key={track.id}
-                    name={track.name}
-                    artist={track.artist}
-                    album={track.album}
+                    track={track}
                     removeTrack={removeTrack}
 
                 />

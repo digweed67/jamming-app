@@ -7,7 +7,10 @@ function Playlist({ playlistName, playlistTracks, removeTrack }) {
     return (
         <div>
             <h2>{playlistName}</h2>
-            <Tracklist tracks={playlistTracks} removeTrack={removeTrack}/>
+            <Tracklist 
+                tracks={playlistTracks} 
+                removeTrack={removeTrack}
+            />
         </div>   
     );
 };
