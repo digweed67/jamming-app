@@ -1,13 +1,17 @@
 import React from "react"; 
 
 
-function Track({ name, artist, album }) {
+function Track({ track, removeTrack }) {
+    console.log(removeTrack);
+    function handleClick() {
+        removeTrack(track);
+    }
     return (
         <div>
-            <h3>{name}</h3>
-            <p>{artist}</p>
-            <p>{album}</p>
-            <button>x</button>
+            <h3>{track.name}</h3>
+            <p>{track.artist}</p>
+            <p>{track.album}</p>
+            <button onClick={handleClick}>x</button>
         </div>
     );
 }
