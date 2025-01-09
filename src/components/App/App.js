@@ -16,19 +16,22 @@ function App() {
                 id: "5",
                 name: "Ande Ande ",
                 artist: "La Marimorena",
-                album: "La Marimorena - Original"
+                album: "La Marimorena - Original",
+                uri: "spotify:track:12345",
             },
             {
                 id: "6",
                 name: "Pero mira cómo beben",
                 artist: "Los Peces en el río",
-                album: "Éxitos de Navidad"
+                album: "Éxitos de Navidad",
+                uri: "spotify:track:67890",
             },
             {
                 id: "7",
                 name: "Belén Campanas de Belén",
                 artist: "Los Ángeles",
-                album: "Feliz Navidad (single)"
+                album: "Feliz Navidad (single)",
+                uri: "spotify:track:11223",
             },
             
             
