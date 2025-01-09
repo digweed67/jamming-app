@@ -39,6 +39,17 @@ function App() {
         ]
     );
 
+    function savePlaylist() {
+        const uris = playlistTracks.map(track => track.uri)
+        console.log(uris)
+    
+        if (uris.length === 0) {
+            alert("There are no songs in your playlist yet");
+        }
+    
+        setPlaylistTracks([]);
+    }
+
     function addTrack(track) {
         const isTrackInPlaylist = playlistTracks.some(savedTrack => savedTrack.id === track.id);
         if (!isTrackInPlaylist) {
@@ -66,6 +77,7 @@ function App() {
                     setPlaylistName={setPlaylistName}
                     playlistTracks={playlistTracks}
                     removeTrack={removeTrack}
+                    savePlaylist={savePlaylist}
                 /> 
             </div>
         </div>

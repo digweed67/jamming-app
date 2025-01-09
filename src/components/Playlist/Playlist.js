@@ -3,7 +3,7 @@ import Tracklist from "../Tracklist/Tracklist";
 
 
 
-function Playlist({ playlistName, setPlaylistName, playlistTracks, removeTrack }) {
+function Playlist({ playlistName, setPlaylistName, playlistTracks, removeTrack, savePlaylist }) {
     const handleChange = (event) => {
         const updatedPlaylistName = event.target.value; 
         setPlaylistName(updatedPlaylistName);
@@ -15,7 +15,9 @@ function Playlist({ playlistName, setPlaylistName, playlistTracks, removeTrack }
             <Tracklist 
                 tracks={playlistTracks} 
                 removeTrack={removeTrack}
+    
             />
+            <button onClick={savePlaylist}>Save Playlist</button>
         </div>   
     );
 };
