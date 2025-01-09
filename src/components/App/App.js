@@ -60,6 +60,7 @@ function App() {
                 />
                 <Playlist
                     playlistName={playlistName}
+                    setPlaylistName={setPlaylistName}
                     playlistTracks={playlistTracks}
                     removeTrack={removeTrack}
                 /> 
