@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify.js Test</title>
+</head>
+<body>
+    <h1>Testing Spotify.js</h1>
+    <input type="text" id="searchQuery" placeholder="Search for tracks">
+    <button onclick="searchSpotify()">Search</button>
+
+    <script src="Spotify.js"></script> <!-- Include Spotify.js here -->
+    <script>
+        function searchSpotify() {
+            const query = document.getElementById('searchQuery').value;
+            Spotify.search(query).then(items => {
+                console.log('Search Results:', items); // Logs the search results in the console
+            });
+        }
+    </script>
+</body>
+</html>
+
