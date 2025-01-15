@@ -14,11 +14,21 @@
     <script>
         function searchSpotify() {
             const query = document.getElementById('searchQuery').value;
+            
+            // Ensure the access token is available before making the search request
+            const accessToken = Spotify.getAccessToken();
+            if (!accessToken) {
+                alert('Please authorize the app first!');
+                return;
+            }
+
+            // Perform the search
             Spotify.search(query).then(items => {
                 console.log('Search Results:', items); // Logs the search results in the console
+            }).catch(error => {
+                console.error('Error fetching search results:', error);
             });
         }
     </script>
 </body>
 </html>
-
